@@ -14,7 +14,7 @@
     counter=1
     while(arrayPoint1||arrayPoint2){
         console.log(counter++)
-        if(!arrayPoint2||arrayPoint1<arrayPoint2){
+        if(!arrayPoint2||arrayPoint1<arrayPoint2){ // !arrayPoint2 to avoid comparing with undefined and always giving true
             mergedAray.push(arrayPoint1);
             arrayPoint1 = array1[i]
             i++;

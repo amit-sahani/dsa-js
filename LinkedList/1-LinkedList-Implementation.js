@@ -102,3 +102,5 @@ LL.addAtEnd(100)
 console.log(LL.print())
 LL.removeAtIndex(5)
 console.log(LL.print())
+
+export default LinkedList

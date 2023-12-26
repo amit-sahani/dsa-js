@@ -64,10 +64,11 @@ const insertionSort = (arr) => {
     const n = arr.length
     for(let i=1; i<n; i++){
         let currentVal = arr[i]
-        for(j=i-1; j>=0 && currentVal < arr[j]; j--){
-            arr[j+1] = arr[j]
+        for(let j=i-1; j>=0 && currentVal < arr[j]; j--){
+            let temp = arr[j]
+            arr[j] = arr[j+1]
+            arr[j+1] = temp
         }
-        arr[j+1] = currentVal
     }
     return arr
 }
